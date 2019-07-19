@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Layout</title>
+
+     <style type="text/css">
+         .content{
+             width: 100%;
+             height: 100%;
+             padding-left: 0;
+         }
+         .left-content{
+             height:100%;
+             float: left;
+             width: 20%;
+             background-color: black;
+             position: fixed;
+
+
+         }
+         .titel{
+             padding: 19px 32px 20px;
+
+         }
+
+         .menu{
+             padding: 20px 10px 0 0;
+             height: 700px;
+             border-radius: 7px;
+             border: 1px solid aliceblue;
+
+         }
+
+         ul{
+             list-style-type: none;
+
+         }
+         .nav ul{
+             padding: 0;
+             margin: 0;
+         }
+
+         .nav ul li.active{
+             margin-bottom: 80px;
+         }
+         .nav ul li.active a:hover{
+             color: white;
+         }
+         .nav ul.collapse{
+             display: block;
+         }
+         .nav ul.collapse li{
+             display: block;
+
+             box-sizing: border-box;
+
+         }
+
+         .metismenu li.active{
+             box-sizing: border-box;
+             margin-left: 0;
+             padding: 0;
+         }
+
+
+         .metismenu li li {
+             padding: 8px 20px;
+         }
+         .metismenu li a{
+             position: relative;
+             display: block;
+             font-size:20px;
+             text-decoration: none;
+             text-transform: capitalize;
+             padding: 15px;
+             letter-spacing: 0;
+             font-weight: 400;
+             padding-left: 32px;
+
+         }
+
+         .metismenu li ul{
+
+             padding-left: 37px;
+             color: white;
+         }
+
+
+         .right-content{
+             width: 80%;
+             margin-left: 270px;
+             padding: 0;
+             height: 650px;
+         }
+
+         .header{
+             padding: 5px 150px;
+             background-color: ghostwhite;
+             border-bottom: 1px solid lightyellow;
+             height: 50px;
+         }
+         .search-zone{
+             margin:0.5em;
+         }
+         .search-zone input[type="text"]{
+             padding:0.3em;
+             border-radius:1em;
+             border:1px solid gray;
+             background-color:#e0e0e0;
+
+         }
+         .icon{
+             float: right;
+             font-size: 26px;
+             vertical-align: center;
+             margin: 0 auto;
+
+
+         }
+
+         .Dash{
+             font-size: 21px;
+             float: left;
+             margin-left: 200px;
+         }
+
+         .item ul.pull{
+             margin-top: 30px;
+             float: left;
+         }
+         .item ul li{
+
+             float: left;
+             list-style: none;
+
+         }
+         .item ul li a{
+             padding: 2px 10px;
+             display: block;
+             text-decoration: none;
+
+         }
+         .last-content{
+             background-color: lightcyan;
+             height: 630px;
+             margin-bottom: 5px;
+
+
+
+         }
+         .last-content{
+             width: 100%;
+             display: inline-block;
+             margin-left: 20px;
+
+         }
+         .row{
+             height: 450px;
+             width: 250px;
+             float: left;
+             margin: 50px;
+
+         }
+         .item1{
+             float: right;
+
+             display: inline;
+         }
+
+         .item2{
+             float: left;
+             margin-right: 10px;
+             display: inline;
+         }
+         .footer{
+             text-align: center;
+             background-color: grey;
+             height: 40px;
+             margin-top: 130px;
+
+
+
+         }
+
+
+
+     </style>
+
+    <link rel="stylesheet" href="../../../fontawesome-free-5.9.0-web/css/all.css">
+    <link rel="stylesheet" href="../../../fontawesome-free-5.9.0-web/css/svg-with-js.css">
+
+</head>
+<body>
+<div class="content">
+    <div class="left-content">
+        <div class="titel">
+            <a href="https://colorlib.com/polygon/srtdash/index.html" style="color: white;font-size: 20px;text-align: center"> SRTDash</a>
+
+        </div>
+        <div class="menu">
+            <div  >
+                <nav class="nav">
+                    <ul class="metismenu">
+                        <li class="active">
+                            <a href="Layout.html"> Dashboard</a>
+
+                            <ul class="collapse" style="height: 0px;">
+                               <li>ICO dash</li>
+                               <li> Emone Dash</li>
+                               <Li> CUmO</Li>
+                            </ul>
+                        </li>
+                        <li  class="active">
+                            <a href="Layout.html"> Dashboard</a>
+                            <ul class="collapse" style="height: 0px;">
+                                <li>ICO dash</li>
+                                <li> Emone Dash</li>
+                                <Li> CUmO</Li>
+                            </ul>
+
+                        </li>
+                        <li class="active" >
+                            <a href="Layout.html"> Dashboard</a>
+                            <ul class="collapse" style="height: 0px;">
+                                <li>ICO dash</li>
+                                <li> Emone Dash</li>
+                                <Li> CUmO</Li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="right-content">
+        <div class="header">
+             <div class="search-zone">
+                <form>
+                    <i class="fas fa-align-justify" style="margin-right: 10px;"></i>
+                <input type="text" name="search" value="Search">
+
+                 <div class=" icon">
+                     <i class="far fa-bell"><sup><span> 2</span></sup></i>
+                     <i class="fas fa-box-open"><sup><span>3</span></sup></i>
+                     <i class="fas fa-cogs"></i>
+
+                 </div>
+                </form>
+
+
+             </div>
+
+        </div>
+        <div class="item">
+            <h4 class="Dash"> Dashboard</h4>
+            <ul class="pull">
+                <li  ><a href="LayOut.html"> Home /</a></li>
+
+                <li> <a href="LayOut.html">Span</a></li>
+            </ul>
+
+        </div>
+        <div class="last-content">
+            <div class="row" >
+                <div class="item1">
+
+                         <p style="margin-top: 30px;"> 24h</p>
+                         <span >- 45.87</span>
+
+
+                </div>
+
+
+
+                <div class="item2">
+                    <h4>Bitcoin</h4>
+                    <h2 >$ 4567809,987</h2>
+
+                </div>
+                <div>
+
+                    <img src="../../../ngoc.jpg" height="200" width="250"/></div>
+            </div>
+            <div class="row">
+                <div class="item1">
+                    <p style="margin-top: 30px;"> 24h</p>
+                    <span >- 45.87</span>
+
+                </div>
+                <div class="item2">
+                    <h4>Bitcoin</h4>
+                    <h2 >$ 4567809,987</h2>
+
+                </div>
+                <div>
+
+                    <img src="../../../ngoc1.png" height="200" width="250"/></div>
+
+            </div>
+            <div class="row">
+                <div class="item1">
+                    <p style="margin-top: 30px;"> 24h</p>
+                    <span >- 45.87</span>
+
+                </div>
+                <div class="item2">
+                    <h4>Bitcoin</h4>
+                    <h2 >$ 4567809,987</h2>
+
+                </div>
+                <div>
+
+                    <img src="../../../ngoc1.png" height="200" width="250"/></div>
+            </div>
+
+        </div>
+
+
+    </div>
+    <div class="footer">
+        <p> © Copyright 2018. All right reserved. Template by Colorlib.</p>
+
+
+
+    </div>
+
+</div>
+
+
+</body>
+</html>
